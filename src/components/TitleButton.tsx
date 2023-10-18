@@ -10,7 +10,7 @@ function TitleButton(props:any) {
 
         return(
                 <>
-                    <button style={{backgroundColor:style}} onClick={()=>getDataAndSetStyle()} onMouseOver={()=>setStyle("grey")} onMouseLeave={()=>setStyle("white")}> {props.name}</button>
+                    <button style={{backgroundColor:style}} onClick={()=>getDataAndSetStyle()} onMouseDown={()=>setStyle("grey")} onMouseLeave={()=>setStyle("white")}> {props.name}</button>
                 </>
         )
 }

@@ -32,9 +32,7 @@ body{
 .center-text{
   text-align: center;
 }
-.center-div{
-  padding-top:5%;
-}
+
 .footer{
   position:fixed;
   text-align:center;
@@ -46,7 +44,7 @@ body{
   bottom: 0;
 }
 
-.list{
+.result{
   margin-top:175px;
   margin-bottom:50px;
 }
