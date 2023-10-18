@@ -5,7 +5,7 @@ function Result(props:any){
     
     if(props.proverbs[0]!==undefined &&props.proverbs[0].ProverbId >= 0){
         return (
-            <ol>  
+            <ol className="list">  
                 {
                 props.proverbs.map((value:any) =>{
                     return (
@@ -16,7 +16,7 @@ function Result(props:any){
             </ol>
         );
     }
-    else return <p>စကားပုံများမရှိသေးပါ။</p>
+    else return <p className="center-text center-div">စကားပုံများမရှိသေးပါ။</p>
 }
 
 export default Result;

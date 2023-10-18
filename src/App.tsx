@@ -19,9 +19,9 @@ function App() {
 
   var app = 
   <>
+    <div className="header">
     <div className="center-text"> 
         <h1>မြန်မာ့ရိုးရာ စကားပုံများ</h1>
-        <p>Made with 💖 by Jiro</p>
     </div>
     <div className = "container">{ 
             data.Tbl_MMProverbsTitle.map((value)=>{
@@ -29,6 +29,7 @@ function App() {
             }
         )
     }  
+    </div>
     </div>
     <div className='result'>
         <Result proverbs={proverbs}/>

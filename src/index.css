@@ -20,6 +20,37 @@ ul>li {
   color:grey;
 }
 
+body{
+  margin: 0px!important;
+}
+
 .center-text{
   text-align: center;
+}
+.center-div{
+  padding-top:5%;
+}
+.footer{
+  position:fixed;
+  text-align:center;
+  background:#335533;
+  width:100%;
+  padding:10px 0px;
+  margin:0px;
+  color:white;
+  bottom: 0;
+}
+
+.list{
+  margin-top:175px;
+  margin-bottom:50px;
+}
+
+
+.header{
+  position:fixed;
+  top:0;
+  width:100%;
+  color:white;
+  background-color:#335533;
 }
