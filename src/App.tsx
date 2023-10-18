@@ -6,7 +6,7 @@ import Result from './components/Result'
 import { useState } from 'react';
 function App() {
   
-    const [proverbs,setProverbs] = useState([{ TitleId: 0, ProverbId: 0, ProverbName: '', ProverbDesp: '' }]);
+    const [proverbs,setProverbs] = useState([{ TitleId: -1, ProverbId: -1, ProverbName: '', ProverbDesp: '' }]);
 
 
     const  getDataFunc = (key:number) => {
@@ -17,23 +17,24 @@ function App() {
 
 
 
-  var buttons = 
+  var app = 
   <>
-    <div className = "container">
-    { 
-    data.Tbl_MMProverbsTitle.map((value)=>
-        {
-        return <TitleButton getDataFunc={getDataFunc} id={value.TitleId} name={value.TitleName}/>
-        }
+    <div className="center-text"> 
+        <h1>မြန်မာ့ရိုးရာ စကားပုံများ</h1>
+        <p>Made with 💖 by Jiro</p>
+    </div>
+    <div className = "container">{ 
+            data.Tbl_MMProverbsTitle.map((value)=>{
+                return <TitleButton getDataFunc={getDataFunc} id={value.TitleId} name={value.TitleName}/>
+            }
         )
-    }
-       
-  </div>
-  <div className='result'>
-    <Result proverbs={proverbs}/>
-  </div>
+    }  
+    </div>
+    <div className='result'>
+        <Result proverbs={proverbs}/>
+    </div>
   </>
-  return buttons;
+  return app;
 }
 
 export default App

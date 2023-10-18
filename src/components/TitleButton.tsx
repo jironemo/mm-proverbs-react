@@ -1,10 +1,16 @@
+import { useState } from "react";
 
 
 function TitleButton(props:any) {
+        
+        var [style,setStyle] = useState("white");
+        const getDataAndSetStyle = () =>{
+            props.getDataFunc(props.id);
+        }
 
         return(
                 <>
-                    <button onClick={()=>props.getDataFunc(props.id)}> {props.name}</button>
+                    <button style={{backgroundColor:style}} onClick={()=>getDataAndSetStyle()} onMouseOver={()=>setStyle("grey")} onMouseLeave={()=>setStyle("white")}> {props.name}</button>
                 </>
         )
 }

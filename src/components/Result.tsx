@@ -1,19 +1,22 @@
+import ResultBody from "./ResultBody";
+
 function Result(props:any){
 
-    var k = props.proverbs.map(
-        (value:any) =>{
-            return (
-                <div>
-                <li><b>{value.ProverbName}</b></li>
-                <ul>
-                    <li>{value.ProverbDesp}</li>
-                </ul>
-            </div>
-            )
-        }
-    )
-
-    return k;
+    
+    if(props.proverbs[0]!==undefined &&props.proverbs[0].ProverbId >= 0){
+        return (
+            <ol>  
+                {
+                props.proverbs.map((value:any) =>{
+                    return (
+                        <ResultBody name={value.ProverbName} desc = {value.ProverbDesp}/>
+                        )
+                    }
+                )}
+            </ol>
+        );
+    }
+    else return <p>စကားပုံများမရှိသေးပါ။</p>
 }
 
 export default Result;

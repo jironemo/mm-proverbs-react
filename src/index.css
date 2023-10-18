@@ -11,3 +11,15 @@ button{
   margin: auto;
   padding: 10px;
 }
+
+li{
+  color:rebeccapurple;
+  
+}
+ul>li {
+  color:grey;
+}
+
+.center-text{
+  text-align: center;
+}
