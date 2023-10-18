@@ -9,7 +9,7 @@ function Result(props:any){
                 {
                 props.proverbs.map((value:any) =>{
                     return (
-                        <ResultBody name={value.ProverbName} desc = {value.ProverbDesp}/>
+                        <ResultBody name={value.ProverbName} desc = {value.ProverbDesp} id = {value.ProverbId}/>
                         )
                     }
                 )}

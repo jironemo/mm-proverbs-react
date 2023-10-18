@@ -16,13 +16,8 @@ button{
   margin: auto;
   padding: 10px;
 }
-
-li{
-  color:rebeccapurple;
-  
-}
 ul>li {
-  color:grey;
+  color:rgb(35, 0, 189);
 }
 
 body{
@@ -43,7 +38,13 @@ body{
   color:white;
   bottom: 0;
 }
+.hidden{
+  display:none;
+}
 
+.show{
+  display:block;
+}
 .result{
   margin-top:175px;
   margin-bottom:50px;
@@ -56,4 +57,13 @@ body{
   width:100%;
   color:white;
   background-color:#335533;
+}
+
+
+.proverb-title{
+  width:auto;
+  background-color: transparent;
+  border:none;
+  color:rebeccapurple;
+  font-size: medium;
 }
