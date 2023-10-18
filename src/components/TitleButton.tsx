@@ -1,5 +1,4 @@
-import { useState } from 'react';
-import data from '../data.json'
+
 
 function TitleButton(props:any) {
 
